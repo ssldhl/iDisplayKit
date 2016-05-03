@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CB6D227F54943C95181D72 /* Pods_iDisplaykit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */; };
 		77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE121CD8AAAF0055902B /* AppDelegate.swift */; };
 		77C2CE151CD8AAAF0055902B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE141CD8AAAF0055902B /* ViewController.swift */; };
 		77C2CE181CD8AAAF0055902B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE161CD8AAAF0055902B /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76AEB16A17E9AEEA2306AE7A /* Pods-iDisplaykit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.release.xcconfig"; sourceTree = "<group>"; };
 		77C2CE0F1CD8AAAF0055902B /* iDisplaykit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDisplaykit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE121CD8AAAF0055902B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C2CE141CD8AAAF0055902B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		77C2CE2E1CD8AAAF0055902B /* iDisplaykitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDisplaykitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE321CD8AAAF0055902B /* iDisplaykitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDisplaykitUITests.swift; sourceTree = "<group>"; };
 		77C2CE341CD8AAAF0055902B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDisplaykit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8F9799F53A1D46CF409C4E /* Pods-iDisplaykit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CB6D227F54943C95181D72 /* Pods_iDisplaykit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35CEA6F95AFB5FE6AFCF2C8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77C2CE061CD8AAAE0055902B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				77C2CE261CD8AAAF0055902B /* iDisplaykitTests */,
 				77C2CE311CD8AAAF0055902B /* iDisplaykitUITests */,
 				77C2CE101CD8AAAF0055902B /* Products */,
+				E6AB7E6017AE5DBD5E222D1F /* Pods */,
+				35CEA6F95AFB5FE6AFCF2C8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = iDisplaykitUITests;
 			sourceTree = "<group>";
 		};
+		E6AB7E6017AE5DBD5E222D1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC8F9799F53A1D46CF409C4E /* Pods-iDisplaykit.debug.xcconfig */,
+				76AEB16A17E9AEEA2306AE7A /* Pods-iDisplaykit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C2CE371CD8AAAF0055902B /* Build configuration list for PBXNativeTarget "iDisplaykit" */;
 			buildPhases = (
+				06CF9E642E374A9B0C01AF2F /* Check Pods Manifest.lock */,
 				77C2CE0B1CD8AAAF0055902B /* Sources */,
 				77C2CE0C1CD8AAAF0055902B /* Frameworks */,
 				77C2CE0D1CD8AAAF0055902B /* Resources */,
+				A20F253AD1FC80FEA8171EC0 /* Embed Pods Frameworks */,
+				5767E9C1C19B62A0F31009C7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					77C2CE0E1CD8AAAF0055902B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 28RSYVTV6E;
 					};
 					77C2CE221CD8AAAF0055902B = {
 						CreatedOnToolsVersion = 7.3;
@@ -250,6 +278,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06CF9E642E374A9B0C01AF2F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5767E9C1C19B62A0F31009C7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20F253AD1FC80FEA8171EC0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77C2CE0B1CD8AAAF0055902B /* Sources */ = {
@@ -330,7 +406,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -376,7 +453,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -399,8 +477,10 @@
 		};
 		77C2CE381CD8AAAF0055902B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8F9799F53A1D46CF409C4E /* Pods-iDisplaykit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
 				INFOPLIST_FILE = iDisplaykit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techguthi.iDisplaykit;
@@ -410,8 +490,10 @@
 		};
 		77C2CE391CD8AAAF0055902B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76AEB16A17E9AEEA2306AE7A /* Pods-iDisplaykit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pratik Lohani (L4GQH7X73D)";
 				INFOPLIST_FILE = iDisplaykit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techguthi.iDisplaykit;
@@ -484,6 +566,7 @@
 				77C2CE391CD8AAAF0055902B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77C2CE3A1CD8AAAF0055902B /* Build configuration list for PBXNativeTarget "iDisplaykitTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +575,7 @@
 				77C2CE3C1CD8AAAF0055902B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77C2CE3D1CD8AAAF0055902B /* Build configuration list for PBXNativeTarget "iDisplaykitUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +584,7 @@
 				77C2CE3F1CD8AAAF0055902B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
