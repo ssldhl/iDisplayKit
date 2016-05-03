@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		43CB6D227F54943C95181D72 /* Pods_iDisplaykit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */; };
 		77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE121CD8AAAF0055902B /* AppDelegate.swift */; };
-		77C2CE151CD8AAAF0055902B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE141CD8AAAF0055902B /* ViewController.swift */; };
+		77C2CE151CD8AAAF0055902B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE141CD8AAAF0055902B /* InitialViewController.swift */; };
 		77C2CE181CD8AAAF0055902B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE161CD8AAAF0055902B /* Main.storyboard */; };
 		77C2CE1A1CD8AAAF0055902B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE191CD8AAAF0055902B /* Assets.xcassets */; };
 		77C2CE1D1CD8AAAF0055902B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE1B1CD8AAAF0055902B /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		76AEB16A17E9AEEA2306AE7A /* Pods-iDisplaykit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.release.xcconfig"; sourceTree = "<group>"; };
 		77C2CE0F1CD8AAAF0055902B /* iDisplaykit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDisplaykit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE121CD8AAAF0055902B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77C2CE141CD8AAAF0055902B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77C2CE141CD8AAAF0055902B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		77C2CE171CD8AAAF0055902B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77C2CE191CD8AAAF0055902B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C2CE1C1CD8AAAF0055902B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +87,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77AF4F5C1CD8B17300F64080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77C2CE141CD8AAAF0055902B /* InitialViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		77AF4F5D1CD8B1E700F64080 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		77C2CE061CD8AAAE0055902B = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +127,9 @@
 		77C2CE111CD8AAAF0055902B /* iDisplaykit */ = {
 			isa = PBXGroup;
 			children = (
+				77AF4F5D1CD8B1E700F64080 /* Service */,
+				77AF4F5C1CD8B17300F64080 /* Controller */,
 				77C2CE121CD8AAAF0055902B /* AppDelegate.swift */,
-				77C2CE141CD8AAAF0055902B /* ViewController.swift */,
 				77C2CE161CD8AAAF0055902B /* Main.storyboard */,
 				77C2CE191CD8AAAF0055902B /* Assets.xcassets */,
 				77C2CE1B1CD8AAAF0055902B /* LaunchScreen.storyboard */,
@@ -332,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C2CE151CD8AAAF0055902B /* ViewController.swift in Sources */,
+				77C2CE151CD8AAAF0055902B /* InitialViewController.swift in Sources */,
 				77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techguthi.iDisplaykit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -498,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techguthi.iDisplaykit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
