@@ -14,10 +14,12 @@ class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSourc
     let imageCategories: [String] = ["abstract", "animals", "business", "cats", "city", "food", "nightlife", "fashion", "people", "nature", "sports", "technics", "transport"]
     let tableNode: ASTableNode = ASTableNode()
     
-    required init?(coder aDecoder: NSCoder) {
-        tableNode.view.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
-        
+    override init(node: ASDisplayNode) {
         super.init(node: tableNode)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -63,8 +65,10 @@ class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSourc
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let imageCategory: String = imageCategories[indexPath.row]
-        
-        print("Selected: \(imageCategory)")
+        let detailRootNode: DetailRootNode = DetailRootNode(imageCategory: imageCategory)
+        let detailViewController: DetailViewController = DetailViewController(node: detailRootNode)
+        detailViewController.title = imageCategory.capitalizedString
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 

@@ -15,6 +15,9 @@
 		77C2CE1D1CD8AAAF0055902B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE1B1CD8AAAF0055902B /* LaunchScreen.storyboard */; };
 		77C2CE281CD8AAAF0055902B /* iDisplaykitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE271CD8AAAF0055902B /* iDisplaykitTests.swift */; };
 		77C2CE331CD8AAAF0055902B /* iDisplaykitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE321CD8AAAF0055902B /* iDisplaykitUITests.swift */; };
+		77D1AEF11CD9E58800C59127 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF01CD9E58800C59127 /* DetailViewController.swift */; };
+		77D1AEF41CD9E62100C59127 /* DetailRootNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */; };
+		77D1AEF61CD9FA2400C59127 /* DetailCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		77C2CE2E1CD8AAAF0055902B /* iDisplaykitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDisplaykitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE321CD8AAAF0055902B /* iDisplaykitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDisplaykitUITests.swift; sourceTree = "<group>"; };
 		77C2CE341CD8AAAF0055902B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D1AEF01CD9E58800C59127 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRootNode.swift; sourceTree = "<group>"; };
+		77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCellNode.swift; sourceTree = "<group>"; };
 		C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDisplaykit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F9799F53A1D46CF409C4E /* Pods-iDisplaykit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				77C2CE141CD8AAAF0055902B /* InitialViewController.swift */,
+				77D1AEF01CD9E58800C59127 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 		77C2CE111CD8AAAF0055902B /* iDisplaykit */ = {
 			isa = PBXGroup;
 			children = (
+				77D1AEF21CD9E60700C59127 /* View */,
 				77AF4F5D1CD8B1E700F64080 /* Service */,
 				77AF4F5C1CD8B17300F64080 /* Controller */,
 				77C2CE121CD8AAAF0055902B /* AppDelegate.swift */,
@@ -154,6 +162,15 @@
 				77C2CE341CD8AAAF0055902B /* Info.plist */,
 			);
 			path = iDisplaykitUITests;
+			sourceTree = "<group>";
+		};
+		77D1AEF21CD9E60700C59127 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */,
+				77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E6AB7E6017AE5DBD5E222D1F /* Pods */ = {
@@ -348,7 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D1AEF41CD9E62100C59127 /* DetailRootNode.swift in Sources */,
+				77D1AEF11CD9E58800C59127 /* DetailViewController.swift in Sources */,
 				77C2CE151CD8AAAF0055902B /* InitialViewController.swift in Sources */,
+				77D1AEF61CD9FA2400C59127 /* DetailCellNode.swift in Sources */,
 				77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
