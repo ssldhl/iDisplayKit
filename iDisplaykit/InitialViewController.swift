@@ -15,6 +15,8 @@ class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSourc
     let tableNode: ASTableNode = ASTableNode()
     
     required init?(coder aDecoder: NSCoder) {
+        tableNode.view.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
+        
         super.init(node: tableNode)
     }
     
@@ -23,8 +25,6 @@ class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSourc
         // Do any additional setup after loading the view, typically from a nib.
         
         title = "Image Categories"
-        
-        tableNode.view
         
         tableNode.delegate = self
         tableNode.dataSource = self
