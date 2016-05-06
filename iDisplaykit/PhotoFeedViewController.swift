@@ -1,24 +1,15 @@
 //
-//  DetailViewController.swift
+//  PhotoFeedViewController.swift
 //  iDisplaykit
 //
-//  Created by Sushil Dahal on 5/4/16.
+//  Created by Sushil Dahal on 5/6/16.
 //  Copyright © 2016 TechGuthi. All rights reserved.
 //
 
 import UIKit
-import AsyncDisplayKit
 
-class DetailViewController: ASViewController {
-    
-    override init(node: ASDisplayNode) {
-        super.init(node: node)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+class PhotoFeedViewController: UIViewController, PhotoFeedControllerDelegate {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,13 +19,6 @@ class DetailViewController: ASViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-        
-        let detailRootNode: DetailRootNode = node as! DetailRootNode        
-        detailRootNode.collectionNode.view.collectionViewLayout.invalidateLayout()
     }
     
 
@@ -47,5 +31,10 @@ class DetailViewController: ASViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+//    MARK: PhotoFeedControllerDelegate
+    func resetAllData() {
+//        TODO: Do Something
+    }
 
 }

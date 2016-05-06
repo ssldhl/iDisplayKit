@@ -9,19 +9,26 @@
 import UIKit
 import AsyncDisplayKit
 
+protocol PhotoFeedControllerDelegate: class{
+    func resetAllData()
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var photoFeedDelegate: PhotoFeedControllerDelegate?
+    var _window: WindowWithStatusBarUnderlay?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.backgroundColor = UIColor.whiteColor()
-        window?.rootViewController = UINavigationController(rootViewController: InitialViewController(node: ASDisplayNode()))
-        window?.makeKeyAndVisible()
+//        this UIWindow subclass is neccessary to make the status bar opaque
+        _window = WindowWithStatusBarUnderlay(frame: UIScreen.mainScreen().bounds)
+        _window?.backgroundColor = UIColor.whiteColor()
+        
+//        UIKit Home Feed viewController & navController
         
         return true
     }

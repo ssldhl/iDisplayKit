@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		43CB6D227F54943C95181D72 /* Pods_iDisplaykit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */; };
+		77BC8D4D1CDC835C006FFB4E /* WindowWithStatusBarUnderlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BC8D4C1CDC835C006FFB4E /* WindowWithStatusBarUnderlay.swift */; };
+		77BC8D501CDC83A4006FFB4E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BC8D4F1CDC83A4006FFB4E /* Utilities.swift */; };
+		77BC8D541CDCAC1B006FFB4E /* PhotoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BC8D531CDCAC1B006FFB4E /* PhotoFeedViewController.swift */; };
 		77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE121CD8AAAF0055902B /* AppDelegate.swift */; };
-		77C2CE151CD8AAAF0055902B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE141CD8AAAF0055902B /* InitialViewController.swift */; };
 		77C2CE181CD8AAAF0055902B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE161CD8AAAF0055902B /* Main.storyboard */; };
 		77C2CE1A1CD8AAAF0055902B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE191CD8AAAF0055902B /* Assets.xcassets */; };
 		77C2CE1D1CD8AAAF0055902B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C2CE1B1CD8AAAF0055902B /* LaunchScreen.storyboard */; };
 		77C2CE281CD8AAAF0055902B /* iDisplaykitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE271CD8AAAF0055902B /* iDisplaykitTests.swift */; };
 		77C2CE331CD8AAAF0055902B /* iDisplaykitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2CE321CD8AAAF0055902B /* iDisplaykitUITests.swift */; };
-		77D1AEF11CD9E58800C59127 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF01CD9E58800C59127 /* DetailViewController.swift */; };
-		77D1AEF41CD9E62100C59127 /* DetailRootNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */; };
-		77D1AEF61CD9FA2400C59127 /* DetailCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,11 @@
 
 /* Begin PBXFileReference section */
 		76AEB16A17E9AEEA2306AE7A /* Pods-iDisplaykit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.release.xcconfig"; sourceTree = "<group>"; };
+		77BC8D4C1CDC835C006FFB4E /* WindowWithStatusBarUnderlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowWithStatusBarUnderlay.swift; sourceTree = "<group>"; };
+		77BC8D4F1CDC83A4006FFB4E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		77BC8D531CDCAC1B006FFB4E /* PhotoFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewController.swift; sourceTree = "<group>"; };
 		77C2CE0F1CD8AAAF0055902B /* iDisplaykit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDisplaykit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE121CD8AAAF0055902B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77C2CE141CD8AAAF0055902B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		77C2CE171CD8AAAF0055902B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77C2CE191CD8AAAF0055902B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C2CE1C1CD8AAAF0055902B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +53,6 @@
 		77C2CE2E1CD8AAAF0055902B /* iDisplaykitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDisplaykitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C2CE321CD8AAAF0055902B /* iDisplaykitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDisplaykitUITests.swift; sourceTree = "<group>"; };
 		77C2CE341CD8AAAF0055902B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77D1AEF01CD9E58800C59127 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRootNode.swift; sourceTree = "<group>"; };
-		77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCellNode.swift; sourceTree = "<group>"; };
 		C942F7FE4AC5B7C51E140D77 /* Pods_iDisplaykit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDisplaykit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F9799F53A1D46CF409C4E /* Pods-iDisplaykit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDisplaykit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDisplaykit/Pods-iDisplaykit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +94,8 @@
 		77AF4F5C1CD8B17300F64080 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				77C2CE141CD8AAAF0055902B /* InitialViewController.swift */,
-				77D1AEF01CD9E58800C59127 /* DetailViewController.swift */,
+				77BC8D521CDCABB6006FFB4E /* ASDK */,
+				77BC8D511CDCABB0006FFB4E /* UIKit */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -105,8 +103,32 @@
 		77AF4F5D1CD8B1E700F64080 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				77BC8D4F1CDC83A4006FFB4E /* Utilities.swift */,
+				77BC8D4C1CDC835C006FFB4E /* WindowWithStatusBarUnderlay.swift */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		77BC8D4E1CDC837A006FFB4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		77BC8D511CDCABB0006FFB4E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				77BC8D531CDCAC1B006FFB4E /* PhotoFeedViewController.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		77BC8D521CDCABB6006FFB4E /* ASDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ASDK;
 			sourceTree = "<group>";
 		};
 		77C2CE061CD8AAAE0055902B = {
@@ -134,6 +156,7 @@
 		77C2CE111CD8AAAF0055902B /* iDisplaykit */ = {
 			isa = PBXGroup;
 			children = (
+				77BC8D4E1CDC837A006FFB4E /* Model */,
 				77D1AEF21CD9E60700C59127 /* View */,
 				77AF4F5D1CD8B1E700F64080 /* Service */,
 				77AF4F5C1CD8B17300F64080 /* Controller */,
@@ -167,8 +190,6 @@
 		77D1AEF21CD9E60700C59127 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				77D1AEF31CD9E62100C59127 /* DetailRootNode.swift */,
-				77D1AEF51CD9FA2400C59127 /* DetailCellNode.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -365,11 +386,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D1AEF41CD9E62100C59127 /* DetailRootNode.swift in Sources */,
-				77D1AEF11CD9E58800C59127 /* DetailViewController.swift in Sources */,
-				77C2CE151CD8AAAF0055902B /* InitialViewController.swift in Sources */,
-				77D1AEF61CD9FA2400C59127 /* DetailCellNode.swift in Sources */,
+				77BC8D501CDC83A4006FFB4E /* Utilities.swift in Sources */,
+				77BC8D541CDCAC1B006FFB4E /* PhotoFeedViewController.swift in Sources */,
 				77C2CE131CD8AAAF0055902B /* AppDelegate.swift in Sources */,
+				77BC8D4D1CDC835C006FFB4E /* WindowWithStatusBarUnderlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
