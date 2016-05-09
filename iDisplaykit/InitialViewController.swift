@@ -9,13 +9,11 @@
 import UIKit
 import AsyncDisplayKit
 
-class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSource {
-    
-    let imageCategories: [String] = ["abstract", "animals", "business", "cats", "city", "food", "nightlife", "fashion", "people", "nature", "sports", "technics", "transport"]
-    let tableNode: ASTableNode = ASTableNode()
+class InitialViewController: ASViewController{
+    let initialDisplayNode: InitialDisplayNode = InitialDisplayNode()
     
     override init(node: ASDisplayNode) {
-        super.init(node: tableNode)
+        super.init(node: initialDisplayNode)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -24,51 +22,24 @@ class InitialViewController: ASViewController, ASTableDelegate, ASTableDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        title = "Image Categories"
-        
-        tableNode.delegate = self
-        tableNode.dataSource = self
+        // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        if let indexPath: NSIndexPath = tableNode.view.indexPathForSelectedRow{
-            tableNode.view.deselectRowAtIndexPath(indexPath, animated: true)
-        }
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    MARK: ASTableDataSource / ASTableDelegate
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imageCategories.count
-    }
     
-    func tableView(tableView: ASTableView, nodeBlockForRowAtIndexPath indexPath: NSIndexPath) -> ASCellNodeBlock {
-        let imageCategory: String = imageCategories[indexPath.row]
-        
-        let cellNodeBlock: ASCellNodeBlock = {
-            let textCellNode: ASTextCellNode = ASTextCellNode()
-            textCellNode.text = imageCategory.uppercaseString
-            
-            return textCellNode
-        }
-        
-        return cellNodeBlock
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let imageCategory: String = imageCategories[indexPath.row]
-        let detailRootNode: DetailRootNode = DetailRootNode(imageCategory: imageCategory)
-        let detailViewController: DetailViewController = DetailViewController(node: detailRootNode)
-        detailViewController.title = imageCategory.capitalizedString
-        navigationController?.pushViewController(detailViewController, animated: true)
-    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }
 
