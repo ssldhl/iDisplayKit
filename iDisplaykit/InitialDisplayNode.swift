@@ -18,21 +18,17 @@ class InitialDisplayNode: ASDisplayNode {
     override init(){
         super.init()
         
-        coverImageNode = ASNetworkImageNode()
-        coverImageNode.backgroundColor = ASDisplayNodeDefaultPlaceholderColor()
-        coverImageNode.URL = imageURL
-        
-        addSubnode(coverImageNode)
+        InitialDisplayNode.setUsesImplicitHierarchyManagement(true)
     }
     
     override func layoutSpecThatFits(constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        /*coverImageNode.position = CGPointZero
-         coverImageNode.sizeRange = ASRelativeSizeRangeMakeWithExactCGSize(constrainedSize.max)*/
-        
-        coverImageNode.preferredFrameSize = CGSizeMake(kCoverImageHeight, kCoverImageHeight)
+        coverImageNode = ASNetworkImageNode()
+        coverImageNode.backgroundColor = ASDisplayNodeDefaultPlaceholderColor()
+        coverImageNode.URL = imageURL
+        coverImageNode.preferredFrameSize = CGSizeMake(constrainedSize.max.width, kCoverImageHeight)
         
         let mainStackLayoutSpec: ASStackLayoutSpec = ASStackLayoutSpec.verticalStackLayoutSpec()
-        mainStackLayoutSpec.setChild(coverImageNode)
+        mainStackLayoutSpec.setChildren([coverImageNode])
         
         return mainStackLayoutSpec
     }
